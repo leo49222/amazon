@@ -4,11 +4,15 @@ leo*{
 }
 
 .login{
+    color: #111;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
     background: white;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: fit-content;
 }
 
 .login_logo{
@@ -68,17 +72,54 @@ a.int:hover{
     text-decoration:underline ;
 }
 
-.login_SignInButton{
+.login_signinButton{
     width: 100px;
     height: 30px;
+    text-align: center;
     outline: none;
     cursor: pointer;
     background-color: #f8A87E;
     background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100% );
     border-radius: 2px;
+    width: 100%;
     margin-top: 10px;
     border-color: #a88734 #9c7e31 #046a29;
 }
+.second-btn {
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    border: none;
+    border: #111;
+    border-radius: 3px;
+    font-weight: 500;
+    text-align: center;
+    width: 340px;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+}
+
+.second-btn:hover {
+    background: rgba(239, 242, 245, 0.882);
+}
+
+
+.second-btn:active {
+    border-color: #a88734 #9c7e31 #046a29;
+}
+
+
+.second-btn:focus-visible {
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0);
+}
+
+.see{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+
 
 
 
