@@ -10,12 +10,12 @@ body {
     overflow: hidden;
 }
 
-#wrapper {
+#page {
     display: flex;
     flex-direction: row;
 }
 
-#left {
+#slide1 {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -24,13 +24,13 @@ body {
     height: 100vh;
 }
 
-#right {
+#slide2 {
     flex: 1;
     position: relative;
 }
 
 /* Sign in */
-#signin {
+#Signin {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,11 +39,12 @@ body {
     padding-bottom: 1rem;
 }
 
-#signin form {
+#Signin form {
     width: 80%;
     padding-bottom: 3rem;
 }
-#signin .logo {
+
+#Signin .logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,18 +52,18 @@ body {
     margin-bottom: 8vh;
 }
 
-#signin .logo img {
+#Signin .logo img {
     width: 303px;
     max-width: 80%;
 }
 
-#signin label {
+#Signin label {
     font-size: 0.9rem;
     line-height: 2rem;
     font-weight: 500;
 }
 
-#signin .text-input {
+#Signin .text-input {
     margin-bottom: 1.3rem;
     width: 100%;
     border-radius: 2px;
@@ -70,12 +71,12 @@ body {
     line-height: 1.3rem;
 }
 
-#signin .secondary-btn,
+#Signin .secondary-btn,
 .links, .bar {
     width: 80%;
 }
 
-#signin .links a {
+#Signin .links a {
     display: block;
     color: #2ea0d6;
     text-decoration: none;
@@ -84,11 +85,11 @@ body {
     font-size: 1rem;
 }
 
-#signin .links a:hover {
+#Signin .links a:hover {
     color: #0074ab;
     text-decoration: underline;
 }
-#signin .bar {
+#Signin .bar {
     flex: auto;
     border: none;
     height: 1px;
@@ -96,7 +97,7 @@ body {
     margin-bottom: 1.2rem;
 }
 /* showcase*/
-#showcase {
+#case {
     display: flex;
     background-image: url('images/bg-gtm-2020.png');
     background-position: right center;
@@ -112,7 +113,7 @@ body {
     justify-content: flex-start;
 }
 
-#showcase .showcase-content {
+#case .case-content {
     margin-top: auto;
     margin-left: 50px;
     padding: 5%;
@@ -130,14 +131,14 @@ img {
     vertical-align: middle;
 }
 
-.buildskills {
+.file2 {
     margin-bottom: 24px;
     background-position: 50%;
     background-size: cover;
 }
 
 
-.buildBetter {
+.file3 {
     position: absolute;
     right: 40px;
     bottom: 40px;
@@ -145,7 +146,7 @@ img {
 }
 
 /* footer */
-#main-footer {
+#bottom {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -156,12 +157,12 @@ img {
     padding-top: 5rem;
 }
 
-#main-footer a {
+#bottom a {
     color: hsla(0, 0%, 100%, .7);
     text-decoration: underline;
 }
 
-#main-footer a:hover {
+#bottom a:hover {
     color: #0074ab;
     text-decoration: underline;
 }
@@ -222,7 +223,7 @@ img {
     box-shadow: 0 0 0 2px #58b9eb;
 }
 
-.showcase-btn {
+.try {
     padding: 12px 80px;
     font-size: 14px;
     min-width: unset;
@@ -262,17 +263,17 @@ img {
 
 /* media queries*/
 @media(min-width: 1200px) {
-    #left {
+    #slide1 {
         flex: 4;
     }
 
-    #right {
+    #slide2 {
         flex: 6;
     }
 }
 
 @media(max-width: 1200px) {
-    #showcase .showcase-content{
+    #case .case-content{
         margin-left: 0;
     }
 }
@@ -281,10 +282,10 @@ img {
     body {
         overflow: auto;
     }
-    #right {
+    #slide2 {
         display: none;
     }
-    #left {
+    #slide1 {
         justify-content: start;
         margin-top: 4vh;
     }
@@ -294,7 +295,7 @@ img {
     #signin .text-input {
         margin-bottom: 0.7rem;
     }
-    #main-footer {
+    #bottom {
         padding-top: 1rem;
     }
 }
